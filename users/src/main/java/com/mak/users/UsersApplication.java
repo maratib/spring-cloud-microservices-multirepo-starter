@@ -1,33 +1,30 @@
-package com.mak.gateway;
+package com.mak.users;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
 
 
-
-// @RestController
 @SpringBootApplication
-public class GatewayServer {
+@Slf4j
+public class UsersApplication {
 
 	@Value("${server.port}")
 	private String PORT;
 
 	public static void main(String[] args) {
-		SpringApplication.run(GatewayServer.class, args);
+		SpringApplication.run(UsersApplication.class, args);
 	}
-
-	// @GetMapping
-	// public String index() {
-	// 	return "Gateway-Server";
-	// }
-	
 
 	@PostConstruct
 	public void init() {
-		System.out.println("Gateway-Server Started at port: " + PORT);
+		log.info("Users Service Started at port: " + PORT);
 	}
+	
+
 
 }

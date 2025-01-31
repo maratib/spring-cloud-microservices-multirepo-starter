@@ -1,0 +1,12 @@
+# server:
+#   port: 7001
+
+spring:
+  application:
+    name: users
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

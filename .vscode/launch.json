@@ -39,6 +39,36 @@
       "projectName": "discovery",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-StudentsApplication<students>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.mak.students.StudentsApplication",
+      "projectName": "students",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-StudentApplication<students>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.mak.student.StudentApplication",
+      "projectName": "students",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-UsersApplication<users>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.mak.users.UsersApplication",
+      "projectName": "users",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
